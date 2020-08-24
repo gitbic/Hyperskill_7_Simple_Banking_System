@@ -14,3 +14,6 @@ After creating an account, you can sign in and manage it.  Here are some of the 
 - Close account
 - Log out
 - Exit
+
+
+All manipulations with your account are stored in the database.
