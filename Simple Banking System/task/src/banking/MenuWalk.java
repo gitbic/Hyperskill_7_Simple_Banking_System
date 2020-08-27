@@ -34,11 +34,11 @@ class MenuWalk {
                     break;
 
                 case CHOOSE_MAIN_MENU_ACTION:
-                    processState = chooseMainMenuAction();
+                    chooseMainMenuAction();
                     break;
 
                 case CHOOSE_ACCOUNT_MENU_ACTION:
-                    processState = chooseAccountMenuAction();
+                    chooseAccountMenuAction();
                     break;
 
                 case CREATE_CREDIT_CARD_ACCOUNT:
@@ -82,7 +82,7 @@ class MenuWalk {
         }
     }
 
-    private ProcessState chooseMainMenuAction() {
+    private void chooseMainMenuAction() {
         String menuItem = scanner.next();
         System.out.println();
 
@@ -101,10 +101,9 @@ class MenuWalk {
                 processState = ProcessState.MAIN_MENU;
                 break;
         }
-        return processState;
     }
 
-    private ProcessState chooseAccountMenuAction() {
+    private void chooseAccountMenuAction() {
         String menuItem = scanner.next();
         System.out.println();
 
@@ -132,7 +131,6 @@ class MenuWalk {
                 processState = ProcessState.ACCOUNT_MENU;
                 break;
         }
-        return processState;
     }
 }
 

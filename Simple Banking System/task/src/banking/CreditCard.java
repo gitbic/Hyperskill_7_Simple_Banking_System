@@ -1,7 +1,6 @@
 package banking;
 
 import java.util.Random;
-import java.util.Scanner;
 
 class CreditCard {
     private String cardNumber;
@@ -9,8 +8,6 @@ class CreditCard {
     private int cardBalance;
     private Random rnd = new Random();
     private StringBuilder sb = new StringBuilder();
-    private Scanner scanner = new Scanner(System.in);
-
 
     CreditCard() {
         generateCardNumber();
